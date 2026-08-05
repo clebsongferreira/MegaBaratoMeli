@@ -5,7 +5,7 @@ const produtos = [
     precoAntigo: "R$ 239,00 (619660)",
     preco: "R$ 59,90",
     avaliacao: "⭐⭐⭐⭐⭐ 4.9",
-    imagem: "imagens/creatina.jpg",
+    imagem: "creatina.jpg",
     link: "https://meli.la/2SKaA4s"
 },
 {
@@ -14,7 +14,7 @@ const produtos = [
     avaliacao: "⭐⭐⭐⭐⭐ 4.8 (25.208)",
     precoAntigo: "R$ 299,00",
     preco: "R$ 131,56",
-    imagem: "imagens/parafusadeira.jpg",
+    imagem: "parafusadeira.jpg",
     link: "https://meli.la/1SbWttJ"
 },
 {
@@ -23,7 +23,7 @@ const produtos = [
     avaliacao: "⭐⭐⭐⭐⭐ 4.9 (16.117)",
     precoAntigo: "R$ 79,90",
     preco: "R$ 39,90",
-    imagem: "imagens/serum.jpg",
+    imagem: "serum.jpg",
     link: "https://meli.la/32hwtyc"
 },
 {
@@ -32,7 +32,7 @@ const produtos = [
     avaliacao: "⭐⭐⭐⭐⭐ 4.9 (3.554)",
     precoAntigo: "R$ 65,09",
     preco: "R$ 34,98",
-    imagem: "imagens/loreal.jpg",
+    imagem: "loreal.jpg",
     link: "https://meli.la/2jkA4MK"
 },
 {
@@ -41,7 +41,7 @@ const produtos = [
     avaliacao: "⭐⭐⭐⭐⭐ 4.8 (14.637)",
     precoAntigo: "R$ 60,29",
     preco: "R$ 32,39",
-    imagem: "imagens/protetor-solar-loreal.jpg",
+    imagem: "protetor-solar-loreal.jpg",
     link: "https://meli.la/2ECsMDR"
 },
 {
@@ -50,7 +50,7 @@ const produtos = [
     avaliacao: "⭐⭐⭐⭐⭐ 4.9(2.218)",
     precoAntigo: "R$ 530,45",
     preco: "R$ 359,00",
-    imagem: "imagens/air-fryer.jpg",
+    imagem: "air-fryer.jpg",
     link: "https://meli.la/1hTgD21"
 },
 {
@@ -59,7 +59,7 @@ const produtos = [
     avaliacao: "⭐⭐⭐⭐⭐ 4.8(1.840)",
     precoAntigo: "R$ 1499,00",
     preco: "R$ 891,67",
-    imagem: "imagens/tv-philips.jpg",
+    imagem: "tv-philips.jpg",
     link: "https://meli.la/2BAK7u8"
 },
 {
@@ -68,7 +68,7 @@ const produtos = [
     avaliacao: "⭐⭐⭐⭐⭐ 4.8 (14.637)",
     precoAntigo: "R$ 49,99",
     preco: "R$ 28,22",
-    imagem: "imagens/bone-new-york.jpg",
+    imagem: "bone-new-york.jpg",
     link: "https://meli.la/2z8Qec8"
 },
 {
@@ -77,7 +77,7 @@ const produtos = [
     avaliacao: "⭐⭐⭐⭐⭐ 4.7(12.116)",
     precoAntigo: "R$ 78,00",
     preco: "R$ 31,97",
-    imagem: "imagens/maquina-acabamento.jpg",
+    imagem: "maquina-acabamento.jpg",
     link: "https://meli.la/2g7Y5Ka"
 },
 {
@@ -86,7 +86,7 @@ const produtos = [
     avaliacao: "⭐⭐⭐⭐⭐ 4.8(61186)",
     precoAntigo: "R$ 189,00",
     preco: "R$ 95,00",
-    imagem: "imagens/kit-10-potes.jpg",
+    imagem: "kit-10-potes.jpg",
     link: "https://meli.la/1hwupzV"
 }
 ];
