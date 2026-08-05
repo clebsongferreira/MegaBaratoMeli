@@ -7,17 +7,69 @@ body{
 header{
     background:#ffe600;
     text-align:center;
-    padding:25px;
+    padding:40px 20px;
+}
+.logo img{
+    width:500px;
+    max-width:90%;
+    height:auto;
 }
 
 header h1{
+    font-size:20px;
     margin:0;
+    color:#222;
+}
+
+header h2{
+    margin-top:20px;
+    font-size:20px;
     color:#333;
 }
 
 header p{
-    margin-top:10px;
+    margin-top:15px;
+    font-size:20px;
     color:#555;
+}
+
+/* ===========================
+   AVISO DE PROMOÇÃO
+=========================== */
+
+.aviso-promocao{
+    width:90%;
+    max-width:1400px;
+    margin:25px auto;
+    background:linear-gradient(90deg,#ff0000,#ff4d4d,#ff0000);
+    color:#ffffff;
+    border:4px solid #ffd700;
+    border-radius:15px;
+    padding:18px;
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+    box-shadow:0 8px 25px rgba(255,0,0,.45);
+    animation:pulse 1.2s infinite;
+}
+
+.aviso-promocao span{
+    font-size:32px;
+}
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+        box-shadow:0 8px 25px rgba(255,0,0,.40);
+    }
+    50%{
+        transform:scale(1.03);
+        box-shadow:0 12px 35px rgba(255,0,0,.70);
+    }
+    100%{
+        transform:scale(1);
+        box-shadow:0 8px 25px rgba(255,0,0,.40);
+    }
 }
 
 #produtos{
@@ -34,38 +86,30 @@ header p{
     padding:15px;
     box-shadow:0 2px 8px rgba(0,0,0,.15);
     text-align:center;
+    display:flex;
+    flex-direction:column;
+    transition:.3s;
+}
+
+.produto:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.20);
 }
 
 .produto img{
-    width:100%;
+    width:220px;
     height:220px;
     object-fit:contain;
+    display:block;
+    margin:auto;
 }
-
-.produto h3{
-    margin:15px 0 10px;
-}
-
 .produto h2{
     color:#00a650;
-    font-size:42px;
-    font-weight:bold;
-    margin:8px 0 15px;
+    font-size:40px;
+    font-weight:900;
+    margin:10px 0;
 }
 
-.produto a{
-    display:block;
-    background:#3483fa;
-    color:#fff;
-    text-decoration:none;
-    padding:12px;
-    border-radius:8px;
-    font-weight:bold;
-}
-
-.produto a:hover{
-    background:#2968c8;
-}
 .avaliacao{
     color:#f5b400;
     font-size:18px;
@@ -87,19 +131,18 @@ header p{
     margin:5px 0;
 }
 
-.produto{
-    transition:0.3s;
-}
-
-.produto:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 30px rgba(0,0,0,.20);
-}
-
-.produto img{
-    width:220px;
-    height:220px;
-    object-fit:contain;
+.produto a{
+    margin-top:auto;
     display:block;
-    margin:auto;
+    background:#3483fa;
+    color:#fff;
+    text-decoration:none;
+    padding:12px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.produto a:hover{
+    background:#2968c8;
 }
