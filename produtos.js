@@ -39,7 +39,7 @@ Papa.parse(URL_PLANILHA, {
                     </p>
 
                     <h2>
-                        R$ ${Number(produto.Preço).toFixed(2).replace(".", ",")}
+                        R$ ${Number(String(produto.Preço).replace(",", ".")).toFixed(2).replace(".", ",")}
                     </h2>
 
                     <a href="${produto.Link}" target="_blank">
