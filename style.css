@@ -9,6 +9,7 @@ header{
     text-align:center;
     padding:40px 20px;
 }
+
 .logo img{
     width:500px;
     max-width:90%;
@@ -62,32 +63,40 @@ header p{
         transform:scale(1);
         box-shadow:0 8px 25px rgba(255,0,0,.40);
     }
+
     50%{
         transform:scale(1.03);
         box-shadow:0 12px 35px rgba(255,0,0,.70);
     }
+
     100%{
         transform:scale(1);
         box-shadow:0 8px 25px rgba(255,0,0,.40);
     }
 }
 
+/* ===========================
+   PRODUTOS
+=========================== */
+
 #produtos{
-    width:90%;
+    width:94%;
+    max-width:1600px;
     margin:30px auto;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(5,1fr);
+    gap:18px;
 }
 
 .produto{
     background:#fff;
     border-radius:10px;
-    padding:15px;
+    padding:12px;
     box-shadow:0 2px 8px rgba(0,0,0,.15);
     text-align:center;
     display:flex;
     flex-direction:column;
+    min-width:0;
     transition:.3s;
 }
 
@@ -96,40 +105,77 @@ header p{
     box-shadow:0 15px 30px rgba(0,0,0,.20);
 }
 
+/* ===========================
+   IMAGENS
+=========================== */
+
 .produto img{
-    width:220px;
-    height:220px;
+    width:100%;
+    height:240px;
     object-fit:contain;
     display:block;
-    margin:auto;
+    margin:0 auto 8px;
 }
-.produto h2{
-    color:#00a650;
-    font-size:40px;
-    font-weight:900;
-    margin:10px 0;
+
+/* ===========================
+   NOME DO PRODUTO
+=========================== */
+
+.produto h3{
+    font-size:15px;
+    line-height:1.25;
+    min-height:38px;
+    margin:8px 0;
+    color:#222;
 }
+
+/* ===========================
+   AVALIAÇÃO
+=========================== */
 
 .avaliacao{
     color:#f5b400;
-    font-size:18px;
-    margin:10px 0;
+    font-size:16px;
+    margin:8px 0;
 }
+
+/* ===========================
+   DESCRIÇÃO
+=========================== */
 
 .descricao{
     color:#555;
-    font-size:15px;
-    line-height:1.5;
+    font-size:13px;
+    line-height:1.4;
     min-height:55px;
-    margin:10px 0;
+    margin:8px 0;
 }
+
+/* ===========================
+   PREÇO ANTIGO
+=========================== */
 
 .preco-antigo{
     color:#999;
     text-decoration:line-through;
-    font-size:20px;
+    font-size:16px;
     margin:5px 0;
 }
+
+/* ===========================
+   PREÇO ATUAL
+=========================== */
+
+.produto h2{
+    color:#00a650;
+    font-size:30px;
+    font-weight:900;
+    margin:8px 0 12px;
+}
+
+/* ===========================
+   BOTÃO MERCADO LIVRE
+=========================== */
 
 .produto a{
     margin-top:auto;
@@ -137,12 +183,113 @@ header p{
     background:#3483fa;
     color:#fff;
     text-decoration:none;
-    padding:12px;
-    border-radius:8px;
+    padding:11px;
+    border-radius:7px;
     font-weight:bold;
+    font-size:13px;
     transition:.3s;
 }
 
 .produto a:hover{
     background:#2968c8;
+}
+
+/* ===========================
+   TELAS MENORES
+=========================== */
+
+@media (max-width:1200px){
+
+    #produtos{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+}
+
+/* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width:900px){
+
+    #produtos{
+        grid-template-columns:repeat(3,1fr);
+        gap:14px;
+    }
+
+    .produto img{
+        height:210px;
+    }
+
+}
+
+/* ===========================
+   CELULAR
+=========================== */
+
+@media (max-width:600px){
+
+    header{
+        padding:25px 15px;
+    }
+
+    .logo img{
+        width:320px;
+    }
+
+    header p{
+        font-size:16px;
+    }
+
+    .aviso-promocao{
+        width:88%;
+        font-size:17px;
+        padding:14px;
+    }
+
+    .aviso-promocao span{
+        font-size:22px;
+    }
+
+    #produtos{
+        width:94%;
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
+    .produto{
+        padding:8px;
+    }
+
+    .produto img{
+        height:170px;
+    }
+
+    .produto h3{
+        font-size:13px;
+        min-height:34px;
+    }
+
+    .avaliacao{
+        font-size:13px;
+    }
+
+    .descricao{
+        font-size:11px;
+        min-height:48px;
+    }
+
+    .preco-antigo{
+        font-size:13px;
+    }
+
+    .produto h2{
+        font-size:23px;
+    }
+
+    .produto a{
+        font-size:11px;
+        padding:10px 5px;
+    }
+
 }
