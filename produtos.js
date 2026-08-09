@@ -22,7 +22,7 @@ Papa.parse(URL_PLANILHA, {
             area.innerHTML += `
                 <div class="produto">
 
-                    <img src="imagens/${produto.Imagem}" alt="${produto.Nome}">
+                    <img src="${produto.Imagem}" alt="${produto.Nome}">
 
                     <h3>${produto.Nome}</h3>
 
