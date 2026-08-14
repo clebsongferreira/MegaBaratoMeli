@@ -19,6 +19,21 @@ Papa.parse(URL_PLANILHA, {
                 produto.Ativo.toUpperCase() !== "SIM"
             ) return;
 
+            const preco = parseFloat(
+                String(produto.Preço || "0")
+                    .replace("R$", "")
+                    .replace(/\./g, "")
+                    .replace(",", ".")
+                    .trim()
+            );
+
+            const precoFormatado = isNaN(preco)
+                ? "0,00"
+                : preco.toLocaleString("pt-BR", {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2
+                });
+
             area.innerHTML += `
                 <div class="produto">
 
@@ -39,18 +54,7 @@ Papa.parse(URL_PLANILHA, {
                     </p>
 
                     <h2>
-                        const preco = Number(
-    String(produto.Preço)
-        .replace("R$", "")
-        .replace(/\./g, "")
-        .replace(",", ".")
-        .trim()
-);
-
-const precoFormatado = preco.toLocaleString("pt-BR", {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2
-});
+                        R$ ${precoFormatado}
                     </h2>
 
                     <a href="${produto.Link}" target="_blank">
@@ -62,5 +66,4 @@ const precoFormatado = preco.toLocaleString("pt-BR", {
         });
 
     }
-
 });
