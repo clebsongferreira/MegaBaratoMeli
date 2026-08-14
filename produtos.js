@@ -39,7 +39,18 @@ Papa.parse(URL_PLANILHA, {
                     </p>
 
                     <h2>
-                        R$ ${Number(String(produto.Preço).replace(",", ".")).toFixed(2).replace(".", ",")}
+                        const preco = Number(
+    String(produto.Preço)
+        .replace("R$", "")
+        .replace(/\./g, "")
+        .replace(",", ".")
+        .trim()
+);
+
+const precoFormatado = preco.toLocaleString("pt-BR", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+});
                     </h2>
 
                     <a href="${produto.Link}" target="_blank">
